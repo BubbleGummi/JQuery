@@ -5,68 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery Examination</title>
+    <meta name="description" content="jquery examination">
+    <meta name="author" content="Diana Emanuela Hogescu">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Shelters</a>
-            <a href="#">Contact</a>
-        </nav>
-        <section id="logo">
-            <img src="Images/logo.svg" alt="logo">
-        </section>
-    </header>
-    <article class="hero">
-        <section id="hero_left">
-            <h1>Find your new best pawfriend</h1>
-            <button id="adopt_button">Adopt now</button>
-        </section>
-        <section id="hero_right">
-            <img src="Images/hero_dog.jpg" alt="image of a dog">
-        </section>
-    </article>
-    <main>
-        <article class="adoption_info">
-            <section class="adoption_info_left">
-                <img src="Images/dogs_in_cage.jpg" alt="image of a dog">
+    <div class="container">
+
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Shelters</a>
+                <a href="#">Contact</a>
+                <button id="themeToggle" class="btn btn-light ml-auto">🌞</button>
+
+            </nav>
+        </header>
+        <article class="hero">
+            <section id="hero_left">
+                <h1>Make a difference</h1>
+                <button class="adopt_button">Adopt now</button>
             </section>
-            <section class="adoption_info_right">
-                <h2>Adoption</h2>
-                <p>Adopting a pet is a big decision. You are not only choosing a new companion,
-                    but also taking on a
-                    new responsibility. We are here to help you make the right choice. We have a wide range of pets
-                    available for adoption. You can choose from dogs, cats, rabbits, guinea pigs, and more. We have
-                    pets of all ages, sizes, and breeds. We also have pets with special needs that require extra care
-                    and attention. Our adoption process is simple and straightforward. You can browse our available
-                    pets online and visit our shelter to meet them in person. Our staff will be happy to answer any
-                    questions you may have and help you find the perfect pet for your family. We also offer
-                    post-adoption support to help you and your new pet adjust to life together. If you are ready to
-                    open your heart and home to a new pet, we are here to help you every step of the way.</p>
-                <button class="adoption_info_button">
-                    Learn more
-                </button>
+            <section id="hero_right">
+                <img src="Images/hero_dog.jpg" alt="...">
             </section>
         </article>
+        <main>
 
+            <div class="card-deck">
+                <div class="card card001">
+                    <img src="Images/dogs003.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Adoption checklist</h5>
+                        <p class="card-text">
+                            Before adopting a dog, make sure you have everything you need. Check out our adoption
+                            checklist to make sure you are ready to bring a new dog into your home.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">To the checklist</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/dogs002.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Donations</h5>
+                        <p class="card-text">
 
-    </main>
+                            Our dogs are in need of your help. Please donate to our cause and help us save more dogs
+                            from the streets.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Let's donate</a>
+                    </div>
+                </div>
+                <div class="card card003">
+                    <img src="Images/dogs_in_cage.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dogs for adoption</h5>
+                        <p class="card-text">
+                            We have a lot of dogs that are in need of a loving home. Please consider adopting one of
+                            them and give them a forever home.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Let's see the dogs</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <h2>Subscribe to our newsletter</h2>
+            <p>Subscribe to our newsletter and stay up to date with the latest news and events.</p>
+            <form>
+                <div class="form-group">
+                    <label id="subscribe_email" for="subscribe_email">Enter your Email here:</label>
+                    <input type="text" class="form-control" id="subscribe_email" placeholder="email@email.com">
+                </div>
 
+                <button type="submit" id="submit_button" class="btn btn-primary sub_button">Subscribe</button>
+            </form>
+        </aside>
 
+        <footer>
+            <h2>
+                Address: 1234 Dog Street, Dogtown
 
-    <!-- Icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            </h2>
+            <h2>
+                Phone: 123-456-7890
+            </h2>
 
-    <script src="script.js"></script>
+        </footer>
+        <!-- Icon library -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    </div>
 </body>
 
 </html>
